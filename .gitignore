@@ -1,0 +1,141 @@
+# ==============================================================================
+# MIKOSHI - .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Bytecode e caches do Python
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ------------------------------------------------------------------------------
+# 2. Ambientes virtuais
+# ------------------------------------------------------------------------------
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# ------------------------------------------------------------------------------
+# 3. Empacotamento, distribuição e builds
+# ------------------------------------------------------------------------------
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+*.spec
+
+# ------------------------------------------------------------------------------
+# 4. Testes, cobertura e linters
+# ------------------------------------------------------------------------------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# ------------------------------------------------------------------------------
+# 5. Segurança, credenciais e variáveis de ambiente
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+*.pub
+
+# ------------------------------------------------------------------------------
+# 6. Dados privados, banco de dados local e memórias do Mikoshi
+# ------------------------------------------------------------------------------
+# Bancos de dados locais (SQLite e temporários)
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# Diretórios de dados e conversas do usuário
+data/
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+importers/samples/
+importers/raw/
+*.personality
+!profiles/presets/*.personality
+
+# Logs e arquivos temporários de execução
+*.log
+logs/
+*.tmp
+*.temp
+temp/
+tmp/
+
+# ------------------------------------------------------------------------------
+# 7. Modelos locais de IA e pesos binários
+# ------------------------------------------------------------------------------
+models/
+*.gguf
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
+
+# ------------------------------------------------------------------------------
+# 8. IDEs, editores e sistemas operacionais
+# ------------------------------------------------------------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.pydevproject
+.settings/
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
