@@ -9,6 +9,7 @@ from core.interpretation.models import (
     MessageTone,
     ReceivedMessage,
 )
+from core.interpretation.rule_based import RuleBasedMessageInterpreter
 
 __all__ = [
     "ContextSignal",
@@ -18,4 +19,5 @@ __all__ = [
     "MessageInterpreter",
     "MessageTone",
     "ReceivedMessage",
+    "RuleBasedMessageInterpreter",
 ]
