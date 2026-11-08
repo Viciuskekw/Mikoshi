@@ -9,6 +9,7 @@ from core.interpretation.models import (
     MessageTone,
     ReceivedMessage,
 )
+from core.interpretation.ollama_interpreter import OllamaMessageInterpreter
 from core.interpretation.rule_based import RuleBasedMessageInterpreter
 
 __all__ = [
@@ -18,6 +19,7 @@ __all__ = [
     "MessageInterpretation",
     "MessageInterpreter",
     "MessageTone",
+    "OllamaMessageInterpreter",
     "ReceivedMessage",
     "RuleBasedMessageInterpreter",
 ]
